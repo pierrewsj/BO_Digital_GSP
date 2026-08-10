@@ -1,0 +1,22 @@
+NEXO v30 — MODO LOCAL
+
+O NEXO continua funcionando sem OpenAI para os comandos locais.
+
+VISIBILIDADE
+- Tela de login: NEXO oculto.
+- Após login do operador: NEXO visível.
+- Esta regra evita exibir o assistente antes da identificação operacional, mas não substitui autenticação corporativa.
+
+COMANDOS RÁPIDOS
+- Situação atual
+- Quais são as prioridades?
+- Quais rascunhos existem?
+- Abra o primeiro
+- Resuma esse BO
+- Quais BOs estão sem sincronizar?
+- Sincronizar pendentes
+- Iniciar novo boletim
+- Modo conversa
+
+OPENAI
+Continua opcional. Nenhuma chave é necessária para usar o NEXO local.
