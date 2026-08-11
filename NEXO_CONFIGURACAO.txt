@@ -1,0 +1,30 @@
+NEXO • v31.2 • MODO LOCAL
+
+O NEXO desta versão NÃO precisa de Luna/OpenAI para:
+- situação atual;
+- prioridades;
+- abrir/localizar/resumir BOs;
+- checklist do BO;
+- abrir passagem de turno;
+- abrir fila de sincronização;
+- abrir diagnóstico;
+- iniciar novo BO;
+- sincronizar registros com confirmação;
+- modo de conversa por voz suportado pelo navegador.
+
+O arquivo assistant.js é carregado de forma preguiçosa após o login, reduzindo o trabalho inicial na tela de entrada.
+
+COMANDOS ÚTEIS
+“Situação atual”
+“Quais são as prioridades?”
+“Quais rascunhos existem?”
+“Abra o primeiro”
+“Checklist deste BO”
+“O que falta neste BO?”
+“Fila de sincronização”
+“Passagem de turno”
+“Diagnóstico”
+“Sincronizar pendentes”
+“Modo conversa”
+
+A integração OpenAI existente no Apps Script permanece opcional. Se nenhuma chave/modelo estiver configurado, o NEXO continua trabalhando com as regras locais deste aplicativo.

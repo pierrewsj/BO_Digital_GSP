@@ -1,0 +1,51 @@
+BO DIGITAL GSP • v31.0.0
+VALIDAÇÕES REALIZADAS NO PACOTE
+
+- Sintaxe JavaScript validada com node --check:
+  app.js
+  assistant.js
+  advanced.js
+  service-worker.js
+
+- manifest.json validado como JSON.
+- Referências locais do HTML, manifest e Service Worker conferidas.
+- IDs HTML verificados para evitar duplicidade.
+- QR Code local testado com URL de exemplo e decodificado corretamente por detector QR (OpenCV).
+- Estrutura ZIP conferida após empacotamento.
+
+PONTOS QUE DEVEM SER TESTADOS NO APARELHO/NAVEGADOR REAL
+
+1. Câmera e seletor de arquivos.
+2. Reconhecimento/síntese de voz (varia por navegador/Android).
+3. Ciclo offline -> online e comportamento da rede corporativa.
+4. Atualização real do Service Worker após publicação no GitHub Pages.
+5. Share Target e shortcuts do PWA (dependem do suporte do sistema/navegador).
+6. Conflito real usando dois aparelhos sobre o mesmo BO.
+7. Criptografia local com senha de teste antes de uso operacional.
+8. Sincronização com o endpoint Apps Script atual.
+
+OBSERVAÇÃO
+A execução headless do Chromium do ambiente de construção não ficou disponível para um teste visual automatizado completo. Por isso, além das validações estáticas/sintáticas, o pacote inclui esta lista objetiva de testes em aparelho real.
+
+CORREÇÃO v31.1
+- Sintaxe JS validada em app.js, assistant.js, advanced.js, pwa.js e service-worker.js.
+- Autosave de rascunho mantém syncStatus=local.
+- Rascunho não entra em pendingSyncRecords.
+- Retry automático filtra somente BOs finalizados pendentes/erro.
+- Finalização continua marcando pending antes da tentativa de envio.
+- Migração corrige rascunhos da v31.0 marcados indevidamente como pending.
+- Comando NEXO não sincroniza rascunho antes da finalização.
+
+
+ATUALIZAÇÃO v31.2 — TEMPOS SEPARADOS
+- APP_VERSION atualizado para 31.2.0.
+- Novo registro recebe operationalTiming sem afetar registros antigos.
+- Registros antigos são normalizados com atendimento “não iniciado”.
+- Tempo de elaboração usa createdAt até finalizedAt (ou agora, em rascunhos).
+- Tempo de atendimento usa startedAt/endedAt registrados operacionalmente.
+- Finalização encerra atendimento ainda ativo e grava auditoria.
+- Lista exibe elaboração e atendimento em chips separados.
+- Indicador amarelo/vermelho aplica-se somente ao atendimento em andamento.
+- NEXO não usa mais idade do rascunho como equivalente a tempo de atendimento.
+- service-worker recebeu cache v31.2 para forçar atualização do PWA.
+- JavaScript validado com node --check.
