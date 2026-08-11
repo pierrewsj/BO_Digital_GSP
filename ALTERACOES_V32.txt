@@ -1,0 +1,25 @@
+BO DIGITAL GSP v32.0.0 — PRINCIPAIS ALTERAÇÕES
+
+1. Fluxo redesenhado com base no processo real da Segurança Patrimonial.
+2. BO/atendimento inicia automaticamente quando o vigilante cria o registro ao chegar ao local.
+3. Atendimento termina automaticamente na finalização/envio.
+4. Removido o cartão “Elaboração x atendimento” da primeira etapa.
+5. Novo fluxo em cinco etapas: Ocorrência, Dados essenciais, Apuração, Providências e evidências, Revisão.
+6. Seleção em dois níveis: natureza da ocorrência + tipo de boletim.
+7. Biblioteca com 41 modelos padronizados de BO.
+8. Campos de pessoas, testemunhas, veículos e materiais exibidos dinamicamente conforme o modelo.
+9. Relação do solicitante com a ocorrência evita cadastro duplicado quando ele já é o próprio envolvido.
+10. Separação entre relato recebido e constatação da Segurança.
+11. Roteiro específico de perguntas essenciais, recomendadas e opcionais por ocorrência.
+12. Opção “Não foi possível obter” com justificativa, evitando preenchimento inventado.
+13. Evidência essencial com justificativa obrigatória quando não puder ser registrada.
+14. Relato profissional gerado localmente, sem API paga, somente a partir dos dados do BO.
+15. Revisão final com pendências clicáveis e retorno ao ponto de correção.
+16. Resumo de envolvidos e testemunhas separado.
+17. NEXO atualizado com roteiro do BO e checklist contextual.
+18. Conferência automática de quantidade no modelo de divergência de carga quando valores previsto e constatado são informados.
+19. Home simplificada e orientada à ação “Chegou ao local? Inicie o BO”.
+20. Lista de boletins simplificada, com prioridade para status operacional.
+21. Salvamento automático mantido; botão redundante “Salvar rascunho” removido do rodapé do preenchimento.
+22. Offline, fila de sincronização, retry/backoff, auditoria, conflito entre aparelhos, lightbox, diagnóstico e PWA preservados.
+23. Compatibilidade mantida com Google Apps Script 6.3.0 / compact-t.

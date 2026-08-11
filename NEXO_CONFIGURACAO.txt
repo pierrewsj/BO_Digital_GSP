@@ -1,0 +1,38 @@
+NEXO OPERADOR — BO DIGITAL GSP v32
+
+MODO ATUAL
+O NEXO da v32 foi projetado para entregar utilidade operacional sem API paga.
+Não é necessário configurar OpenAI, Luna ou qualquer chave para utilizar os comandos locais.
+
+FUNÇÕES LOCAIS
+- situação atual;
+- prioridades;
+- rascunhos;
+- registros sem sincronização;
+- roteiro padronizado do BO atual;
+- checklist de pendências;
+- abertura e resumo de BOs;
+- passagem de turno;
+- fila de sincronização;
+- diagnóstico;
+- criação de novo boletim;
+- voz do navegador, quando suportada.
+
+COMANDOS SUGERIDOS
+“Nexo, roteiro deste BO.”
+“Nexo, checklist deste BO.”
+“Nexo, o que falta neste BO?”
+“Nexo, quais são as prioridades?”
+“Nexo, situação atual.”
+“Nexo, abrir BO 27.”
+“Nexo, sincronizar pendentes.”
+“Nexo, passagem de turno.”
+
+PADRONIZAÇÃO
+O NEXO usa a mesma biblioteca local de modelos do formulário. Assim, o roteiro e o checklist levam em consideração o tipo de ocorrência escolhido, sem depender de inteligência artificial externa.
+
+SEGURANÇA
+O NEXO não finaliza nem exclui BOs automaticamente. A finalização continua protegida pela tela normal de revisão e pelas confirmações do aplicativo.
+
+OPENAI / IA EXTERNA
+A integração com IA externa permanece opcional para uma evolução futura. Ela não é necessária para o funcionamento do fluxo padronizado da v32.

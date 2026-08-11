@@ -1,0 +1,75 @@
+BO DIGITAL GSP v32.0.0 — TESTES REALIZADOS
+
+1. SINTAXE JAVASCRIPT
+- app.js: aprovado por node --check
+- assistant.js: aprovado por node --check
+- advanced.js: aprovado por node --check
+- pwa.js: aprovado por node --check
+- service-worker.js: aprovado por node --check
+- bo-templates.js: aprovado por node --check
+
+2. MANIFESTO PWA
+- manifest.json: JSON válido
+- atalhos PWA preservados
+- Share Target preservado
+
+3. BIBLIOTECA DE MODELOS
+- 41 tipos de boletim cadastrados
+- 41 referências atuais cobertas por modelo
+- IDs de perguntas verificados para evitar duplicidade dentro do mesmo modelo
+- perguntas do tipo seleção verificadas com opções válidas
+- modos de entidades verificados
+
+4. FLUXO BÁSICO DE INTERFACE
+Teste automatizado em navegador headless:
+- login
+- home
+- criação de novo BO
+- seleção de Veículos e circulação
+- seleção de Acidente ou colisão com veículo
+- confirmação de que “Elaboração x atendimento” não aparece na etapa 1
+- ausência de erros JavaScript no fluxo testado
+Resultado: APROVADO.
+
+5. FLUXO GUIADO COMPLETO — ACIDENTE/COLISÃO
+Teste automatizado em navegador headless:
+- login
+- novo BO
+- categoria e modelo
+- localização, diretoria e solicitante
+- relação do solicitante com o fato
+- confirmação/cadastro das entidades aplicáveis
+- veículo cadastrado
+- materiais ocultos para o modelo testado
+- relato recebido
+- constatação da Segurança
+- roteiro padronizado essencial preenchido
+- providências e desfecho
+- evidência indisponível com justificativa obrigatória
+- geração do relato profissional local
+- chegada à revisão final
+- controle do atendimento presente somente na revisão
+- ausência de erros JavaScript durante o fluxo
+Resultado: APROVADO.
+
+6. REGRAS DE SINCRONIZAÇÃO
+- rascunho permanece salvo localmente e não entra na fila de envio
+- tentativa de sincronização ocorre após finalização
+- compatibilidade frontend declarada com API 6.3.0 / compact-t
+
+7. REVISÃO VISUAL
+Foram inspecionadas as telas principais em composição móvel:
+- Home
+- Etapa 1 — Ocorrência
+- Etapa 2 — Dados essenciais
+- Etapa 3 — Apuração
+- Etapa 4 — Providências e evidências
+- Etapa 5 — Revisão
+
+8. AJUSTES FINAIS DE QUALIDADE
+- revisão separa envolvidos e testemunhas
+- NEXO inclui “Roteiro do BO” entre os comandos rápidos
+- divergência de carga pode apresentar conferência automática entre quantidade prevista e constatada quando ambas forem informadas
+
+OBSERVAÇÃO
+Os testes automatizados validam os principais fluxos e regras da aplicação, mas a validação em campo continua recomendada em pelo menos um smartphone Android real, especialmente para câmera, permissões, funcionamento offline, atualização do PWA e sincronização com o endpoint real do Google Apps Script.
